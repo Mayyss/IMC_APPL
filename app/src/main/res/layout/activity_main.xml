@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mayssa"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senai"
+        android:layout_below="@id/tv_1"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jandira"
+        android:layout_above="@id/tv_1"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amato"
+        android:layout_toEndOf="@id/tv_1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="18dp"
+    />
+-->
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:background="#BB467A">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bowlby_one"
+            android:gravity="end"
+            android:text="HEALTH \n CALC"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+        <ImageView
+            android:id="@+id/im_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imc64"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/tv_2"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_wave_top"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_wave_up"
+        android:scaleType="fitXY"
+
+        />
+    <ImageView
+        android:id="@+id/iv_wave_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_wave_down"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvido por DS2T-A"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88BB86FC"
+        android:layout_below="@+id/iv_wave_top"
+        android:layout_above="@+id/iv_wave_bottom"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
