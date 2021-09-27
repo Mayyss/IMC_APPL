@@ -57,7 +57,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:padding="16dp"
-        android:background="#BB467A">
+        android:background="#bc477b">
 
         <TextView
             android:id="@+id/tv_2"
@@ -77,13 +77,14 @@
             android:src="@drawable/imc64"
             android:layout_alignParentEnd="true"
             android:layout_alignBottom="@+id/tv_2"
+            android:layout_alignTop="@id/tv_2"
             />
 
     </RelativeLayout>
     <ImageView
         android:id="@+id/iv_wave_top"
         android:layout_width="wrap_content"
-        android:layout_height="90dp"
+        android:layout_height="70dp"
         android:src="@drawable/ic_wave_up"
         android:scaleType="fitXY"
         android:layout_below="@id/rl_header"
@@ -106,53 +107,99 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="8dp"
         android:textColor="@color/white"/>
-
-    <LinearLayout
+    //ScrollView - para barra de rolagem
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/iv_wave_top"
-        android:layout_above="@+id/iv_wave_bottom"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:orientation="vertical"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login_titulo"
-            android:textAppearance="@style/titulo"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login_subtitulo"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"/>
-        <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/iv_wave_top"
+        android:layout_above="@id/iv_wave_bottom"
+        android:scrollbars="none">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="@string/login_et_email">
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp">
 
-            <EditText
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_titulo"
+                android:textAppearance="@style/titulo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_subtitulo"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"/>
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="32dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/login_et_email"
+                app:endIconMode="clear_text">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="@string/login_et_senha">
-
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/login_et_senha"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_entrar"
                 />
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_lembrar_me"
+                android:textSize="16sp"
+                android:layout_gravity="end"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_esqueci_a_senha"
+                android:layout_gravity="end"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textAllCaps="false"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_nao_tem_conta"
+                    android:layout_marginRight="8sp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login_criar_uma_conta_agora"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
