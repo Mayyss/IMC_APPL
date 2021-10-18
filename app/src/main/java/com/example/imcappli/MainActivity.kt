@@ -2,6 +2,7 @@ package com.example.imcappli
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,4 +14,6 @@ class MainActivity : AppCompatActivity() {
         //Se tiver toolbar esconda, se não tiver faça nada
         supportActionBar!!.hide()
     }
+
+
 }

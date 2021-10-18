@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.imcappli">
-    //Para mudar o ícone do app, coloca a mesma imagem no icon e roundIcon
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/imc64"
@@ -9,14 +9,18 @@
         android:roundIcon="@drawable/imc64"
         android:supportsRtl="true"
         android:theme="@style/Theme.IMCAPPLI">
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait">//Para não girar a tela
+        <activity android:name=".Novo_Usuario_Activity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            //Para não girar a tela
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
