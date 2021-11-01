@@ -10,4 +10,15 @@
     <string name="login_esqueci_a_senha">Esqueci a senha</string>
     <string name="login_nao_tem_conta">Não tem uma conta?</string>
     <string name="login_criar_uma_conta_agora">Criar uma conta agora</string>
+    <string name="subtitulo_dados_pessoais">Dados pessoais</string>
+    <string name="subtitulo_dados_para_autenticacao">Dados para autenticação</string>
+    <string name="subtitulo_trocar_foto">Trocar foto</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="nome">Nome</string>
+    <string name="profissao">Profissão</string>
+    <string name="altura">Altura</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
 </resources>

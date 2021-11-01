@@ -164,6 +164,7 @@
                     />
             </com.google.android.material.textfield.TextInputLayout>
             <Button
+                android:id="@+id/button_entrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/login_entrar"
@@ -177,6 +178,7 @@
                 android:layout_gravity="end"
                 />
             <Button
+                android:id="@+id/button_esqueci_senha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/login_esqueci_a_senha"
@@ -195,6 +197,7 @@
                     android:text="@string/login_nao_tem_conta"
                     android:layout_marginRight="8sp"/>
                 <Button
+                    android:id="@+id/button_conta_nova"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/login_criar_uma_conta_agora"
