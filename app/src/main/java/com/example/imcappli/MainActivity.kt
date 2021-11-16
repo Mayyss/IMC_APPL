@@ -7,6 +7,7 @@ import android.view.Menu
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.imcappli.utils.calcularIdade
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         val editSenha = findViewById<EditText>(R.id.edit_senha)
 
         buttonEntrar.setOnClickListener {
+
+            calcularIdade("2000-10-03")
+
             //Abrimos o arquivo
             val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
 
